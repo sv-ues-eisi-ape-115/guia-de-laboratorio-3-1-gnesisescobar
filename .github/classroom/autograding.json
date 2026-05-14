@@ -1,0 +1,174 @@
+{
+  "tests": [
+    {
+      "name": "T01.1-2 — VentanaProductos existe y extiende JFrame (3 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=G0301Test#T01_Ejemplo#existe_y_es_jframe 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 3
+    },
+    {
+      "name": "T01.2-3 — VentanaProductos: JSplitPane y JTabbedPane (4 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T01_Ejemplo#tiene_splitpane+G0301Test#T01_Ejemplo#tiene_tabbedpane\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 4
+    },
+    {
+      "name": "T01.4-6 — VentanaProductos: 2+ tabs, JList con datos, CompoundBorder (8 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T01_Ejemplo#tabbedpane_tiene_dos_tabs+G0301Test#T01_Ejemplo#tiene_jlist_con_datos+G0301Test#T01_Ejemplo#usa_compound_border\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 8
+    },
+    {
+      "name": "T02.1-2 — VitrinaLayouts: existe y usa GridLayout (4 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T02_Vitrina#clase_existe+G0301Test#T02_Vitrina#usa_gridlayout\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 4
+    },
+    {
+      "name": "T02.3-5 — VitrinaLayouts: CardLayout, TitledBorder y >=6 botones (11 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T02_Vitrina#tiene_campo_cardlayout+G0301Test#T02_Vitrina#usa_titled_border+G0301Test#T02_Vitrina#tiene_minimo_seis_botones\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 11
+    },
+    {
+      "name": "T03.1-3 — FormularioCliente: existe, JTabbedPane y 2+ pestañas (5 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T03_Formulario#clase_existe+G0301Test#T03_Formulario#tiene_tabbedpane+G0301Test#T03_Formulario#tabbedpane_dos_tabs\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 5
+    },
+    {
+      "name": "T03.4-5 — FormularioCliente: JTextArea y CompoundBorder (10 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T03_Formulario#tiene_textarea+G0301Test#T03_Formulario#usa_compound_border\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 10
+    },
+    {
+      "name": "T04.1-3 — AppMenuLateral: existe, BoxLayout y CardLayout (5 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T04_MenuLateral#clase_existe+G0301Test#T04_MenuLateral#usa_boxlayout+G0301Test#T04_MenuLateral#tiene_campo_cardlayout\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 5
+    },
+    {
+      "name": "T04.4-5 — AppMenuLateral: >=5 botones y borde en panel lateral (10 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T04_MenuLateral#tiene_cinco_botones+G0301Test#T04_MenuLateral#usa_borde\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 10
+    },
+    {
+      "name": "T05.1-4 — VistaMaestroDetalle: existe, JSplitPane y parámetros correctos (8 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T05_MaestroDetalle#clase_existe+G0301Test#T05_MaestroDetalle#tiene_splitpane+G0301Test#T05_MaestroDetalle#splitpane_one_touch+G0301Test#T05_MaestroDetalle#splitpane_parametros\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 8
+    },
+    {
+      "name": "T05.5-7 — VistaMaestroDetalle: JList con datos, JTextArea y TitledBorder (12 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T05_MaestroDetalle#tiene_jlist_con_datos+G0301Test#T05_MaestroDetalle#tiene_textarea+G0301Test#T05_MaestroDetalle#usa_titled_border\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 12
+    },
+    {
+      "name": "T06.1-3 — DashboardIntegrado: existe, JSplitPane y JTabbedPane 3 tabs (5 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T06_Dashboard#clase_existe+G0301Test#T06_Dashboard#tiene_splitpane+G0301Test#T06_Dashboard#tabbedpane_tres_tabs\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 5
+    },
+    {
+      "name": "T06.4-5 — DashboardIntegrado: BoxLayout y tamaño mínimo >=900x550 (10 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T06_Dashboard#usa_boxlayout+G0301Test#T06_Dashboard#tiene_tamano_minimo\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 10
+    },
+    {
+      "name": "T07.1-3 — Producto.java (5 campos, toString), Main.java existe (2 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=\"G0301Test#T07_Estandares#producto_tiene_cinco_campos+G0301Test#T07_Estandares#producto_tostring+G0301Test#T07_Estandares#main_existe\" 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 2
+    },
+    {
+      "name": "T07.4 — Ninguna clase usa null layout (3 pts)",
+      "setup": "",
+      "run": "mvn -q test -Dtest=G0301Test#T07_Estandares#sin_null_layout 2>&1 | tail -5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 90,
+      "points": 3
+    },
+    {
+      "name": "Compilación completa del proyecto — mvn compile test-compile (5 pts)",
+      "setup": "",
+      "run": "mvn -q compile test-compile 2>&1 | tail -5 && echo BUILD_OK",
+      "input": "",
+      "output": "BUILD_OK",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 5
+    },
+    {
+      "name": "Fat JAR ejecutable generado — mvn package + Main-Class correcto (5 pts)",
+      "setup": "",
+      "run": "mvn -q clean package -DskipTests && JAR=$(ls target/*-fat.jar 2>/dev/null|head -1) && [ -n \"$JAR\" ] && MAIN=$(unzip -p \"$JAR\" META-INF/MANIFEST.MF|grep 'Main-Class'|tr -d '\\r'|awk '{print $2}') && [ \"$MAIN\" = 'sv.edu.ues.ape115.layouts.app.Main' ] && echo JAR_OK",
+      "input": "",
+      "output": "JAR_OK",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 5
+    }
+  ]
+}
